@@ -91,6 +91,7 @@ def cluster_metrics(data, clusters, sample_size=2000):
     for i in range(len(unique)):
         print(f"Cluster {unique[i]+1}  nº críticas: {counts[i]}")
 
+    plt.figure(figsize=(12, 3))
     plt.bar(unique+1, counts)
     plt.xlabel("Cluster")
     plt.ylabel("Número de críticas")
